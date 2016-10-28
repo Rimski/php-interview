@@ -8,8 +8,9 @@ class HomeController extends \Controllers\Web\WebController {
 		parent::__construct($container);
 	}
 
-	public function default($request, $response, $args) {
+	public function home($request, $response, $args) {
 		$response = $this->view->render($response, 'home.html');
 		return $response;
+        
 	}
 }

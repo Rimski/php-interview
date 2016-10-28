@@ -13,7 +13,7 @@ class StudentsController extends \Controllers\Web\WebController {
 		$this->studentRepository = $this->container['student_repository'];
 	}
 
-	public function list($request, $response, $args) {
+	public function studentList($request, $response, $args) {
 		$students = $this->studentRepository->getAll();
 
 		// TODO: Resolve display names here
